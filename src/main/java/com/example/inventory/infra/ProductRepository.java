@@ -45,5 +45,7 @@ public class ProductRepository {
 		existing.setUpdatedAt(Instant.now());
 		store.put(existing.getId(), existing);
 		return Uni.createFrom().item(existing);
+		
+		// invertory infra changes
 	}
 }
